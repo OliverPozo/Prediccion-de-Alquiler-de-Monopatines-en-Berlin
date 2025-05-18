@@ -7,19 +7,19 @@ import joblib
 
 
 MODELOS = {
-    "linear_regression": joblib.load("saved_models/linear.pkl"),
-    "ridge_regression": joblib.load("saved_models/ridge.pkl"),
-    "lasso_regression": joblib.load("saved_models/lasso.pkl"),
-    "elasticnet_regression": joblib.load("saved_models/elasticnet.pkl"),
-    "gradient_boosting": joblib.load("saved_models/gradient_boosting.pkl"),
-    "random_forest": joblib.load("saved_models/random_forest.pkl"),\
-    "gradient_boosting_hybrid": joblib.load("saved_models/gradient_boosting_hybrid.pkl"),
+    "linear_regression": joblib.load("saved_models/linear.pkl")["pipeline"],
+    "ridge_regression": joblib.load("saved_models/ridge.pkl")["pipeline"],
+    "lasso_regression": joblib.load("saved_models/lasso.pkl")["pipeline"],
+    "elasticnet_regression": joblib.load("saved_models/elasticnet.pkl")["pipeline"],
+    "gradient_boosting": joblib.load("saved_models/gradient_boosting.pkl")["pipeline"],
+    "random_forest": joblib.load("saved_models/random_forest.pkl")["pipeline"],
+    "gradient_boosting_hybrid": joblib.load("saved_models/gradient_boosting_hybrid.pkl")["pipeline"],
 }
 
 FEATURE_COLUMNS = [
     "temporada", "anio", "mes", "hora", "feriado",
     "dia_semana", "dia_trabajo", "clima", "temperatura",
-    "sensacion_termica", "humedad", "velocidad_viento"
+    "humedad", "velocidad_viento"
 ]
 
 # Entrada esperada para /predict
