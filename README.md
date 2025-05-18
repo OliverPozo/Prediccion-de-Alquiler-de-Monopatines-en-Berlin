@@ -1,1 +1,0 @@
-# Prediccion-de-Alquiler-de-Monopatines-en-Berlin
