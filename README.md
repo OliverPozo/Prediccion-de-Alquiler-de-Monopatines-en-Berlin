@@ -8,11 +8,11 @@ and exposing the models through an API.
 ## 📋 Table of Contents
 
 - [Repository Structure](#repository-structure)  
-- [Project Overview](#📄-project-overview)  
-- [Set up and Installation](#🔧-set-up-and-installation)  
-- [Usage](#🚀-usage)  
-- [API Overview](#📊-api-overview)  
-- [Deployment](#☁️-deployment)
+- [Project Overview](#project-overview)  
+- [Set up and Installation](#set-up-and-installation)  
+- [Usage](#usage)  
+- [API Overview](#api-overview)  
+- [Deployment](#deployment)
 
 ---
 
@@ -30,7 +30,7 @@ and exposing the models through an API.
 
 ---
 
-## 📄 Project Overview
+## 📄Project Overview
 The dataset contains **17,380 records** with hourly scooter rental data in Berlin. The main objective is to accurately predict the number of scooters rented per hour using a robust machine learning workflow.
 
 ### Key Project Steps
@@ -58,7 +58,7 @@ The dataset contains **17,380 records** with hourly scooter rental data in Berli
 
 ---
 
-## 🔧 Set up and Installation 
+## 🔧Set up and Installation 
 
 Follow the steps below to set up the project on your local machine: 
   
@@ -76,7 +76,7 @@ Follow the steps below to set up the project on your local machine:
 
 ---
 
-## 🚀 Usage 
+## 🚀Usage 
 
 To run the pipeline and evaluate model performance, execute the following command in your terminal:
 
@@ -88,7 +88,7 @@ This will train the models, run the evaluation steps, and display performance me
 
 ---
 
-## 📊 API Overview
+## 📊API Overview
 
 This project provides a FastAPI-based REST API for making scooter rental predictions. You can use the default model (Linear Regression) or specify a different model for your prediction.
 
@@ -178,7 +178,7 @@ To specify a model, send a POST request to `/predict_con_modelo` with the same f
 ---
 
 
-## ☁️ Deployment
+## ☁Deployment
 
 The project is deployed on [Railway](https://web-production-9b1b8.up.railway.app/).  
 You can access the live API and interact with it using the endpoints described above.
