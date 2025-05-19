@@ -7,7 +7,7 @@ and exposing the models through an API.
 
 ## 📋 Table of Contents
 
-- [Repository Structure](#📦-repository-structure)  
+- [Repository Structure](#repository-structure)  
 - [Project Overview](#📄-project-overview)  
 - [Set up and Installation](#🔧-set-up-and-installation)  
 - [Usage](#🚀-usage)  
@@ -16,7 +16,7 @@ and exposing the models through an API.
 
 ---
 
-## 📦 Repository Structure
+## 📦Repository Structure
 
 - `config/`: The hyperparameters used and data config. 
 - `data/`: Original dataset and processed data. 
