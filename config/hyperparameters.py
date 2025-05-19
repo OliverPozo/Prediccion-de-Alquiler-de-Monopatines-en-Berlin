@@ -15,24 +15,24 @@ MODEL_PARAMS = {
         'cv': 5
     },
     'gradient_boosting': {
-        'n_estimators': randint(50, 301),           # entre 50 y 300
-        'learning_rate': uniform(0.01, 0.19),        # entre 0.01 y 0.2
-        'max_depth': randint(3, 11),                 # entre 3 y 10
-        'subsample': uniform(0.6, 0.4),              # entre 0.6 y 1.0
+        'n_estimators': randint(50, 301),           
+        'learning_rate': uniform(0.01, 0.19),       
+        'max_depth': randint(3, 11),                 
+        'subsample': uniform(0.6, 0.4),              
         'cv': 5
     },
     'random_forest': {
-        'n_estimators': randint(50, 301),            # entre 50 y 200
-        'max_depth': [10, 20, None],                 # fija, puede mantenerse así
-        'min_samples_split': randint(2, 11),         # entre 2 y 10
-        'min_samples_leaf': randint(1, 5),           # entre 1 y 4
+        'n_estimators': randint(50, 301),            
+        'max_depth': [10, 20, None],                 
+        'min_samples_split': randint(2, 11),         
+        'min_samples_leaf': randint(1, 5),           
         'cv': 5
     },
     'gradient_boosting_hybrid': {
-        'n_estimators': randint(50, 301),            # entre 50 y 100
-        'learning_rate': uniform(0.01, 0.19),        # entre 0.01 y 0.1
-        'max_depth': randint(3, 11),                  # entre 3 y 7
-        'subsample': uniform(0.6, 0.4),              # entre 0.6 y 1.0
+        'n_estimators': randint(50, 301),            
+        'learning_rate': uniform(0.01, 0.19),        
+        'max_depth': randint(3, 11),                 
+        'subsample': uniform(0.6, 0.4),              
         'cv': 5
     }
 }

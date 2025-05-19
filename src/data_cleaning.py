@@ -39,12 +39,8 @@ def handle_missing_values(df):
 
 def handling_outliers(df):
     # Para 'velocidad_viento'
-    mean_wind = df[df['velocidad_viento'] <= 1]['velocidad_viento'].mean()  # Media de valores >= 1
-    df.loc[df['velocidad_viento'] > 1, 'velocidad_viento'] = mean_wind     # Reemplazar valores < 1
-
-    # Para 'sensacion_termica'
-    #mean_temp = df[df['sensacion_termica'] <= 1]['sensacion_termica'].mean()  # Media de valores >= 1
-    #df.loc[df['sensacion_termica'] > 1, 'sensacion_termica'] = mean_temp      # Reemplazar valores < 1
+    mean_wind = df[df['velocidad_viento'] <= 1]['velocidad_viento'].mean() 
+    df.loc[df['velocidad_viento'] > 1, 'velocidad_viento'] = mean_wind     
     return df
 
 def store_data(df, file_path):

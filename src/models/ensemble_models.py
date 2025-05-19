@@ -71,7 +71,7 @@ class GradientBoostingHybridModel(BaseModel):
         self.pipeline = self.build_pipeline()
         self.pipeline.fit(X, y)
 
-        # Fase 2: GridSearch refinado
+        # Fase 2: GridSearch 
         best_params = self.pipeline.named_steps['model'].best_params_
         
         param_grid = {
